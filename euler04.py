@@ -10,6 +10,16 @@ def palindrome(str):
             break
     return ret
 
+limit=1000
+found = False
+for i in range(limit)[::-1]:
+    for x in range(limit)[::-1]:
+        if(palindrome(str(x*i))):
+            print(x*i)
+            found=True
+        if(found): break
+    if(found): break
+
 print(palindrome("sidis"))
 print(palindrome("ipercoop"))
 print(palindrome("pippococa"))
