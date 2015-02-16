@@ -12,3 +12,4 @@ def palindrome(str):
 
 print(palindrome("sidis"))
 print(palindrome("ipercoop"))
+print(palindrome("pippococa"))
