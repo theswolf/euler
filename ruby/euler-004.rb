@@ -5,7 +5,7 @@
 def generate
   (100...999).each do |a|
     (a...999).each do |b|
-      palindrome {a*b }
+      palindrome { a*b }
     end
   end
 end
