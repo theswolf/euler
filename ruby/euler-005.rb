@@ -3,11 +3,14 @@
 #232792560
 
 def divide(limit)
-  (3...limit).reverse_each do |divider|
+  (7...limit).each do |divider|
     if (yield % divider != 0)
+      puts yield.to_s + " false"
       return false
+      #break
     end
   end
+  return true
 end
 
 
